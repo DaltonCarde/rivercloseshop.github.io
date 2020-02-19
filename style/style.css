@@ -111,7 +111,9 @@ nav {
     body {
         overflow-x: hidden;
     }
-
+    nav{
+        overflow: hidden;
+    }
     .seperator {
         display: flex;
         max-width: 200rem;
@@ -122,7 +124,7 @@ nav {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         z-index: 100;
         right: 0px;
         height: 100vh;
@@ -446,7 +448,7 @@ nav {
     rgba(59, 72, 75, 0.7)), url("https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-position: center;
     
 }
@@ -513,6 +515,11 @@ nav {
         padding-bottom: 2rem;
         text-align: center;
         justify-content: center;
+    }
+    .discover-our-shop{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -843,7 +850,7 @@ footer{
         font-size: 1.5rem;
         padding: .6rem .6rem;
     }
-   
+    
     .newsletter-btn{
         margin-left: 9rem;
     }
