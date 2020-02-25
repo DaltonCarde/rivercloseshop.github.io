@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,8 @@ nav {
     background-color: #f5f6fa;
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 .logo {
     color: rgb(226, 226, 226);
@@ -108,8 +111,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    html,body {
         overflow-x: hidden;
+        width: 100%;
     }
     .site-wrapper{
         .overflow-x: hidden;
@@ -117,26 +121,26 @@ nav {
     nav{
         overflow: hidden;
     }
-    .seperator {
+    /* .seperator {
         display: flex;
         max-width: 200rem;
         align-items: center;
         justify-content: center;
         width: 90%;
         margin-left: 2rem;
-    }
+    } */
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         z-index: 1;
         right: 0px;
         height: 100vh;
-        top: 0vh;
+        top: 5vh;
         background-color: #f5f6fa;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         overflow-x: hidden;
